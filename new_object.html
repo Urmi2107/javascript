@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function Human(firstName, lastName,age) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age=age;
+	}
+
+function display()
+{
+	let name = new Human("Urmi", "Halder",20);
+	document.getElementById('fullname').innerHTML = name.firstName+" "+name.lastName;
+
+}
+</script>
+<button type="button" onclick="display()">Show Full Name</button>
+<br>
+<div id="fullname">
+</div>
+</body>
